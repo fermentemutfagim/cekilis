@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fermente Mutfağım Çekiliş</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="flex-cols">
+                <img
+                    alt="Fermente Mutfağım Logo"
+                    src="images/mutfak-360_129.png"
+                    srcset="
+                        images/mutfak-360_129.png 1x,
+                        images/mutfak-720_258.png 2x" />
+                <div></div>
+            </div>
+
+            <div class="flex-cols">
+
+                <form id="add-names" class="add-names-form section" action="">
+                    <label for="names">Yeni isim ekle:</label>
+                    <br />
+                    <textarea name="names" id="names"></textarea>
+                    <br />
+                    <button type="submit" class="button">Ekle</button>
+                </form>
+
+                <div class="start-container">
+                    <button
+                     type="button"
+                     id="start-button"
+                     class="button start-button">
+                        Seç
+                    </button>
+                </div>
+
+            </div>
+
+            <ol id="selected-names-list"></ol>
+
+            <ul id="names-list" class="section"></ul>
+
+        </div>
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>
