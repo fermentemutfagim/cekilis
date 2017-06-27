@@ -48,10 +48,6 @@ var App = {
     var selecteds = this.get('selecteds')
     var selected = Math.floor(Math.random() * names.size)
 
-    if (names.length == selecteds.length) {
-      return
-    }
-
     if (selecteds.includes(selected)) {
       return this.onClickStart()
     }
@@ -78,7 +74,7 @@ var App = {
     var names = this.get('names')
     var selecteds = this.get('selecteds')
 
-    this.$startButton.disabled = !names.size
+    this.$startButton.disabled = names.size == selecteds.length
 
     var listHTML = ''
     var list = []
